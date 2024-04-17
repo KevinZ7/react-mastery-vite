@@ -1,0 +1,9 @@
+.NavigationButton {
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.NavigationButton:hover {
+  background-color: bisque;
+}

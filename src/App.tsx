@@ -1,12 +1,7 @@
 import "./App.css";
-import Pagination from "./components/pagination/Pagination";
 
 function App() {
-  return (
-    <div className="App">
-      <Pagination />
-    </div>
-  );
+  return <div className="App">Welcome!</div>;
 }
 
 export default App;

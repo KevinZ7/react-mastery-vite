@@ -1,0 +1,23 @@
+.BooksContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  gap: 30px;
+}
+
+.BookContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.BookContainer > p {
+  text-align: center;
+}
+
+.BookContainer > button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

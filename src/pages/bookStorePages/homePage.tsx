@@ -1,15 +1,17 @@
-import React from "react";
 import "./homePage.css";
-import { Link } from "react-router-dom";
-import { NavigationButton } from "../../components/shared";
+import { Outlet } from "react-router-dom";
+import CartProvider from "../../context/bookstore/CartContext";
+import Cart from "../../components/bookstore/Cart";
+import { BookStoreHeader } from "../../components/bookstore";
 
 const homePage = () => {
   return (
     <div className="MainContainer">
-      <h1>Welcome to Kevin's Bookstore</h1>
-      <Link to={"/bookstore/books"}>
-        <NavigationButton>Browse Books</NavigationButton>
-      </Link>
+      <CartProvider>
+        <BookStoreHeader />
+        <Cart />
+        <Outlet />
+      </CartProvider>
     </div>
   );
 };

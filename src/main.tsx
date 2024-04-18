@@ -6,6 +6,8 @@ import PaginationPage from "./pages/paginationPages";
 import BookstorePage from "./pages/bookStorePages";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomeContent from "./components/bookstore/HomeContent.tsx";
+import BooksPage from "./pages/bookStorePages/BooksPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,16 @@ const router = createBrowserRouter([
   {
     path: "/bookstore",
     element: <BookstorePage />,
+    children: [
+      {
+        index: true,
+        element: <HomeContent />,
+      },
+      {
+        path: "books",
+        element: <BooksPage />,
+      },
+    ],
   },
 ]);
 

@@ -18,6 +18,9 @@ function App() {
       <Link to="/bookstore">
         <NavigationButton>Bookstore Page</NavigationButton>
       </Link>
+      <Link to="/wordle">
+        <NavigationButton>Wordle</NavigationButton>
+      </Link>
     </div>
   );
 }

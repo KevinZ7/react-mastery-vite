@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import ErrorPage from "./pages/errorPage.tsx";
 import PaginationPage from "./pages/paginationPages";
 import BookstorePage from "./pages/bookStorePages";
+import WordlePage from "./pages/wordlePages";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomeContent from "./components/bookstore/HomeContent.tsx";
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         element: <BooksPage />,
       },
     ],
+  },
+  {
+    path: "/wordle",
+    element: <WordlePage />,
   },
 ]);
 
